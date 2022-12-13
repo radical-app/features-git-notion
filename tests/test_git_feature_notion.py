@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-"""Tests for `git_notion` package."""
+"""Tests for `git_feature_notion` package."""
 
 import pytest
 
 from click.testing import CliRunner
 
-from git_notion import git_notion
-from git_notion import cli
+from git_feature_notion import git_feature_notion
+from git_feature_notion import cli
 
 
 @pytest.fixture
@@ -31,7 +31,7 @@ def test_command_line_interface():
     runner = CliRunner()
     result = runner.invoke(cli.main)
     assert result.exit_code == 0
-    assert 'git_notion.cli.main' in result.output
+    assert 'git_feature_notion.cli.main' in result.output
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output

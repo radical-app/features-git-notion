@@ -1,4 +1,4 @@
-* git-notion version:
+* git-feature-notion version:
 * Python version:
 * Operating System:
 
