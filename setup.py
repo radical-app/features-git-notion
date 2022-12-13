@@ -47,6 +47,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/radical-app/git-feature-notion',
-    version='0.2.6',
+    version='1.0.0',
     zip_safe=False,
 )
