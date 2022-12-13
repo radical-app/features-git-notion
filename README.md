@@ -5,18 +5,18 @@ Syncs Github markdown files in your repository to Notion.
 
 This utility is described in the following [blog post](https://www.swiftlane.com/blog/syncing-docs-from-code-repositories-to-notion/).
 
-See example [Notion page](https://www.notion.so/git_notion-195c08d3d14140eb9a35ac00f9a0f078).
+See example [Notion page](https://www.notion.so/git_feature_notion-195c08d3d14140eb9a35ac00f9a0f078).
 
 ## Installation
 ```
-pip install git-notion
+pip install git-feature-notion
 ```
 
 or for local installation:
 
 ```bash
-git clone https://github.com/NarekA/git-notion.git
-cd git-notion
+git clone https://github.com/NarekA/git-feature-notion.git
+cd git-feature-notion
 pip install -e .
 ```
 
@@ -37,7 +37,7 @@ export NOTION_SEARCH_BY_REGEX="**/*.md"              # Can be in setup.cfg as we
 
 These parameters can be set in the `setup.cfg` for the repo.
 ```
-[git-notion]
+[git-feature-notion]
 ignore_regex = models/.*
 notion_root_page = https://www.notion.so/...
 search_by_regex = "**/*.md"
@@ -47,10 +47,10 @@ search_by_regex = "**/*.md"
 
 ```bash
 # To upload your current directory
-git-notion
+git-feature-notion
 
 # To upload another directory
-git-notion --path path/to/your/repo
+git-feature-notion --path path/to/your/repo
 ```
 
 

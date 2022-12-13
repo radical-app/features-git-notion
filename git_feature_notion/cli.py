@@ -1,15 +1,15 @@
-"""Console script for git_notion."""
+"""Console script for git_feature_notion."""
 import sys
 import click
-import git_notion
+import git_feature_notion
 
 
 @click.command()
 @click.option('--path', default=".", help='The path to the repo you want to sync')
 def main(path):
-    """Console script for git_notion."""
+    """Console script for git_feature_notion."""
     click.echo("running sync")
-    git_notion.sync_to_notion(path)
+    git_feature_notion.sync_to_notion(path)
     return 0
 
 

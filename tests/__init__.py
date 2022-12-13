@@ -1,1 +1,1 @@
-"""Unit test package for git_notion."""
+"""Unit test package for git_feature_notion."""
